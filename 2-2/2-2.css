@@ -1,0 +1,73 @@
+*{
+    font-family: 'Noto Sans Arabic', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+    direction: rtl;
+
+}
+body{
+    background-image:url(./2-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.login-form{
+    background-color:#000000b8;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    width: 25rem;
+    border-radius: 5px;
+}
+.login-form > p{
+    color: white;
+}
+.inp-comp{
+    display: flex;
+}
+
+.inp-comp input{
+    margin: 0;
+    outline: none;
+    color: #6c757d;
+    border: none;
+    padding: 4px 8px;
+    width: 16rem;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.inp-comp i{
+    background-color: #6c757d;
+    color: white;
+    width: 40px;
+    text-align: center;
+    margin: auto;
+    padding: 2px;
+    text-align: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius:5px ;
+}
+.forgot{
+    display: flex;
+    color: white;
+    gap:4px;
+}
+.forgot a{
+    color: rgb(0, 145, 255);
+    text-decoration: none;
+}
+button{
+    width: 296px;
+    height: 38px;
+    border-radius: 5px;
+    border: none;
+    background-color: #20d027;
+    color: white;
+}

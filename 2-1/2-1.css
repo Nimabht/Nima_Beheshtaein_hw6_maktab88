@@ -1,0 +1,60 @@
+* {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: 1rem auto;
+    width: 57%;
+}
+
+.colflex {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.rowflex {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.w-33 {
+    width: 33.33%;
+}
+
+.green {
+    background-color: #baffc9;
+    height: 6rem;
+    padding: 2.5rem 2rem;
+}
+
+.yellow {
+    background-color: #ffffba;
+    padding: 2rem;
+}
+
+.orange {
+    background-color: #ffdfba;
+    padding: 2rem 1rem;
+    height: 50%;
+}
+
+.blue {
+    background-color: #bae1ff;
+    padding: 2rem 1rem;
+    height: 50%;
+}
+
+.red {
+    background-color: #ffb3ba;
+    padding: 2rem;
+}
+
+.white {
+    background-color: white;
+    padding: 1rem;
+    width: 14rem;
+}

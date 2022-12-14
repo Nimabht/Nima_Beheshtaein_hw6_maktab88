@@ -1,4 +1,3 @@
-//FIXME: functiones needs validator
 //Random number generator with range 1 to 10(by defult)
 function generateRandom(min = 1, max = 10) {
   let difference = max - min;

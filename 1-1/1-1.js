@@ -15,7 +15,8 @@ function RaceCar(name, orderInGame = 0) {
 //Game Rule maker
 function MakegameRules() {
   let carCount = +prompt("How many cars do you want?");
-  if (isNaN(carCount)) {
+  //Validator1
+  if (isNaN(carCount) || carCount <= 0) {
     document.getElementById("result").innerHTML +=
       "<p>Invalid input 😐😐😐</p><p>Please enter number :)</p>";
     throw new Error("Invalid input!!!");
@@ -25,6 +26,12 @@ function MakegameRules() {
   let orders = [...Array(carCount).keys()].sort((a, b) => 0.5 - Math.random());
   for (let i = 0; i < carCount; i++) {
     let carName = prompt(`Enter car${i + 1} name:`);
+    //validator2
+    if (carName === "") {
+      document.getElementById("result").innerHTML +=
+        "<p>Invalid input 😐😐😐</p><p>Please enter Valid name :)</p>";
+      throw new Error("Invalid input!!!");
+    }
     cars.push(new RaceCar(carName, orders[i] + 1));
   }
   //Sorting cars by their orders

@@ -52,11 +52,13 @@ function mapSimulator(cars, carCount) {
       road[car.position] = "-";
       let nextPosition = car.position + dices[carNumber];
       if (nextPosition >= 300) {
+        //Removing the car that passed the finish line for more memory performance
         ranks.push(car.name);
         carCount--;
         cars = cars.filter((item) => item.name !== car.name);
         continue;
       }
+      //Moving cars based on dice number
       if (road[nextPosition] === "-") {
         car.position = nextPosition;
         road[nextPosition] = car.name;
@@ -70,6 +72,7 @@ function mapSimulator(cars, carCount) {
       }
       carNumber++;
     }
+    //Logging Road after moving
     console.log(road.filter((char) => char != "x").join(""));
   }
   //Mapping Ranks in Friendly look
@@ -78,7 +81,6 @@ function mapSimulator(cars, carCount) {
       `Rank ${index + 1}: ${rank} ${index === 0 ? "(Winner!!!)" : ""}\n`
   );
   //Displaying new ranks
-
   for (const rank of ranks) {
     document.getElementById("result").innerHTML += `<p>${rank}</p>`;
   }
